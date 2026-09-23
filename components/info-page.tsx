@@ -1,0 +1,1 @@
+export function InfoPage({eyebrow,title,children}:{eyebrow:string;title:string;children:React.ReactNode}){return <article className="mx-auto min-h-[65vh] max-w-3xl px-4 py-16"><p className="text-sm font-bold text-violet">{eyebrow}</p><h1 className="mt-3 text-4xl font-black text-night">{title}</h1><div className="mt-8 space-y-6 leading-8 text-slate-600">{children}</div></article>}

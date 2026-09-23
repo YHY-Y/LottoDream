@@ -1,0 +1,3 @@
+import {describe,expect,it} from 'vitest';import {generateGames,generateLotto} from './generator';
+const symbols=[{symbolName:'거미',symbolMeaning:'인내'},{symbolName:'집',symbolMeaning:'안정'}];
+describe('lotto generator',()=>{it('creates six unique, ascending numbers in range',()=>{for(let i=0;i<30;i++){const numbers=generateLotto(symbols).map(x=>x.number);expect(numbers).toHaveLength(6);expect(new Set(numbers).size).toBe(6);expect(numbers).toEqual([...numbers].sort((a,b)=>a-b));expect(numbers.every(n=>n>=1&&n<=45)).toBe(true)}});it('creates requested games without AI',()=>expect(generateGames(symbols,5)).toHaveLength(5))});
