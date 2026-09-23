@@ -1,0 +1,1 @@
+export function AdSlot({label='광고 영역'}:{label?:string}){return <aside aria-label={label} className="my-12 hidden min-h-24 items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50 text-xs text-slate-400" data-ad-slot>{label} · AdSense 승인 후 사용</aside>}

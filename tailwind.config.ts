@@ -1,0 +1,2 @@
+import type { Config } from 'tailwindcss';
+export default {content:['./app/**/*.{ts,tsx}','./components/**/*.{ts,tsx}'],theme:{extend:{colors:{night:'#17153b',violet:'#6d4aff',gold:'#f5b942',mist:'#f7f5ff'},boxShadow:{dream:'0 20px 60px rgba(63,45,130,.14)'},keyframes:{pop:{'0%':{opacity:'0',transform:'scale(.7) translateY(8px)'},'100%':{opacity:'1',transform:'scale(1) translateY(0)'}}},animation:{pop:'pop .45s ease-out both'}}},plugins:[]} satisfies Config;
